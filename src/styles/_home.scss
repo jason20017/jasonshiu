@@ -1,0 +1,257 @@
+@media (min-width: 859px) {
+  $base-font-size: 5vw;
+  $base-img-size: 30vw;
+  .home_container {
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica;
+    margin-top: 0rem; //避開navbar固定後，往上縮的空間
+    z-index: 0;
+    .home_left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 90vh;
+      z-index: 0;
+      img {
+        width: calc(#{$base-img-size});
+        border-radius: 50%;
+        margin: 5rem auto;
+        margin-right: 6rem;
+        box-shadow: 3px 3px 10px var(--main-yellow);
+        animation: shining 3s linear infinite;
+      }
+      .home_socialIcon {
+        display: flex;
+        justify-content: center;
+        padding-left: 10rem;
+        .home_Icon {
+          font-size: 60px;
+          margin: 0 1.5rem;
+          color: var(--main-yellow);
+        }
+        .git_icon:hover,
+        .med_icon:hover,
+        .lin_icon:hover {
+          color: var(--navi-yellow);
+          font-size: 65px;
+          transition: 0.5s;
+        }
+      }
+      .home_email {
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-left: 10.5rem;
+        color: var(--text-white);
+        font-size: 20px;
+      }
+    }
+    @keyframes shining {
+      0% {
+        box-shadow: 3px 3px 10px var(--main-yellow);
+      }
+
+      50% {
+        box-shadow: 12px 12px 60px var(--main-yellow);
+      }
+
+      100% {
+        box-shadow: 3px 3px 10px var(--main-yellow);
+      }
+    }
+
+    .home_right {
+      position: relative;
+      width: 50%;
+      height: 90vh;
+      z-index: 0;
+      .info_box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50%;
+        top: -15rem;
+        bottom: 0;
+        left: 0;
+        right: 10rem;
+        margin: auto;
+        .info {
+          margin: 1.5rem 0;
+          word-wrap: break-word;
+        }
+        .home_name {
+          position: absolute;
+          top: -1rem;
+          left: 0;
+          font-size: calc(#{$base-font-size} + 0.5vw);
+          font-weight: 900;
+          color: var(--main-yellow);
+          text-shadow: 0 1px 0 rgb(10, 0, 0), 0 2px 0 #160404,
+            0 3px 0 rgb(12, 2, 2), 0 4px 0 #0e0c0c, 0 5px 0 rgb(19, 10, 10),
+            0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+            0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+            0 20px 20px rgba(0, 0, 0, 0.15);
+          // text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+          animation: nameShining 3s linear infinite;
+        }
+        .home_title {
+          position: absolute;
+          top: 7rem;
+          left: 0;
+          font-size: calc(#{$base-font-size} - 2vw);
+          color: var(--text-white);
+          text-shadow: var(--text-shadow-balck);
+        }
+        .home_desc_box {
+          position: absolute;
+          top: 10rem;
+          left: 0;
+          font-size: calc(#{$base-font-size} - 3vw);
+          color: var(--text-white);
+          text-shadow: var(--text-shadow-balck);
+        }
+      }
+    }
+    @keyframes nameShining {
+      0% {
+        color: var(--main-yellow);
+      }
+
+      50% {
+        color: var(--navi-yellow);
+      }
+
+      100% {
+        color: var(--main-yellow);
+      }
+    }
+  }
+}
+
+@media (max-width: 858px) {
+  $base-font-size: 10vw;
+  $base-img-size: 55vw;
+  .home_container {
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: Helvetica;
+    width: 100%;
+    max-width: 800px;
+    z-index: 0;
+    .home_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      padding-top: 5rem;
+      z-index: 0;
+      img {
+        width: calc(#{$base-img-size});
+        border-radius: 50%;
+        margin: 3rem auto;
+        box-shadow: 3px 3px 10px var(--main-yellow);
+        animation: shining 3s linear infinite;
+      }
+      .home_socialIcon {
+        display: flex;
+        justify-content: center;
+        margin-top: -2rem;
+        .home_Icon {
+          font-size: 60px;
+          margin: 0 1.5rem;
+          color: var(--main-yellow);
+        }
+        .git_icon:hover,
+        .med_icon:hover,
+        .lin_icon:hover {
+          color: var(--navi-yellow);
+          font-size: 65px;
+          transition: 0.5s;
+        }
+      }
+      .home_email {
+        text-align: center;
+        color: var(--text-white);
+        padding-top: 1rem;
+        font-size: 20px;
+      }
+      @keyframes shining {
+        0% {
+          box-shadow: 3px 3px 10px var(--main-yellow);
+        }
+
+        50% {
+          box-shadow: 12px 12px 60px var(--main-yellow);
+        }
+
+        100% {
+          box-shadow: 3px 3px 10px var(--main-yellow);
+        }
+      }
+    }
+    .home_right {
+      position: relative;
+      width: 100%;
+      height: 25vh;
+      z-index: 0;
+      .info_box {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        left: 20%;
+        margin: auto;
+        .info {
+          margin: 0.4rem 0;
+          word-wrap: break-word;
+        }
+        .home_name {
+          font-size: calc(#{$base-font-size});
+          font-weight: 900;
+          color: var(--main-yellow);
+          text-shadow: 0 1px 0 rgb(10, 0, 0), 0 2px 0 #160404,
+            0 3px 0 rgb(12, 2, 2), 0 4px 0 #0e0c0c, 0 5px 0 rgb(19, 10, 10),
+            0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+            0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+            0 20px 20px rgba(0, 0, 0, 0.15);
+          // text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+          animation: nameShining 3s linear infinite;
+        }
+        .home_title {
+          position: absolute;
+          top: 5rem;
+          left: 0;
+          font-size: calc(#{$base-font-size} - 5vw);
+          color: var(--text-white);
+          text-shadow: var(--text-shadow-balck);
+        }
+        .home_desc_box {
+          position: absolute;
+          top: 7rem;
+          left: 0;
+          font-size: calc(#{$base-font-size} - 6.5vw);
+          color: var(--text-white);
+          text-shadow: var(--text-shadow-balck);
+        }
+      }
+    }
+  }
+  @keyframes nameShining {
+    0% {
+      color: var(--main-yellow);
+    }
+
+    50% {
+      color: var(--navi-yellow);
+    }
+
+    100% {
+      color: var(--main-yellow);
+    }
+  }
+}

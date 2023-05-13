@@ -1,0 +1,212 @@
+@media (min-width: 859px) {
+  .about_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem; //避開navbar固定後，往上縮的空間
+    .about_mainBox {
+      position: relative;
+      min-height: 100%;
+      .about_photoBox {
+        position: absolute;
+        left: 10%;
+        width: 40%;
+        height: 70vh;
+        // border: 2px solid red;
+        right: 0;
+        .about_imageBox {
+          width: 75%;
+          height: 75%;
+          position: absolute;
+          top: 15%;
+          left: 15%;
+          opacity: 0;
+          object-fit: cover;
+          transition: opacity 0.25s ease-out;
+          box-shadow: 3px 3px 10px black;
+          z-index: 2;
+          animation: move 4s linear infinite;
+        }
+        .about_imageBox-active {
+          //只有被暗道的圖示才會顯示透明度1
+          opacity: 1;
+        }
+        .about_borderBox {
+          position: absolute;
+          top: 20%;
+          left: 20%;
+          width: 75%;
+          height: 75%;
+          border: 8px solid var(--navi-yellow);
+          box-shadow: 3px 3px 50px black;
+          z-index: 1;
+        }
+      }
+      .about_descBox {
+        position: absolute;
+        left: 50%;
+        width: 40%;
+        height: 70vh;
+        // border: 2px solid black;
+        .about_desc {
+          position: absolute;
+          top: 15%;
+          left: 5%;
+          color: antiquewhite;
+          opacity: 0;
+          transition: opacity 0.25s ease-out;
+          .about_desc_title {
+            font-size: 60px;
+          }
+          .about_desc_content {
+            font-size: 25px;
+          }
+        }
+        .about_desc-active {
+          opacity: 1;
+        }
+      }
+    }
+    .about_arrowBox {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+      bottom: 10vh;
+      max-width: 100%;
+      // border: 2px solid blue;
+      cursor: pointer;
+      .arrowIcon {
+        margin: 0 10rem;
+        font-size: 35px;
+        color: var(--navi-yellow);
+      }
+      .arrowIcon:hover {
+        font-size: 38px;
+        transition: 0.5s;
+      }
+      .about_dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        // border: 2px solid red;
+        .about_dot {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          border: 1px solid black;
+          border-radius: 50%;
+          background-color: var(--navi-yellow);
+          margin: 0 2rem;
+          cursor: pointer;
+        }
+        .about_dot::before {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 80%;
+          background-color: black;
+          border-radius: 50%;
+          opacity: 0;
+          transition: opacity 0.25s ease-out;
+        }
+        .about_dot-active::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(12px, 12px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+}
+
+@media (max-width: 859px) {
+  .about_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem; //避開navbar固定後，往上縮的空間
+    .about_mainBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .about_photoBox {
+        position: relative;
+        width: 75%;
+        height: 55vh;
+        // border: 2px solid red;
+        .about_imageBox {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 15%;
+          opacity: 1;
+          object-fit: cover;
+          transition: opacity 0.25s ease-out;
+          box-shadow: 3px 3px 10px black;
+          z-index: 2;
+          animation: move 4s linear infinite;
+        }
+
+        .about_borderBox {
+          position: absolute;
+          top: 1%;
+          left: 20%;
+          width: 100%;
+          height: 57vh;
+          border: 8px solid var(--navi-yellow);
+          box-shadow: 3px 3px 50px black;
+          z-index: 1;
+        }
+      }
+      .about_descBox {
+        position: relative;
+        width: 90%;
+        height: 60vh;
+        // border: 2px solid black;
+        .about_desc {
+          position: absolute;
+          top: 8%;
+          left: 20%;
+          color: antiquewhite;
+          opacity: 1;
+          transition: opacity 0.25s ease-out;
+          .about_desc_title {
+            font-size: 60px;
+          }
+          .about_desc_content {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .about_arrowBox {
+      opacity: 0;
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(12px, 12px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+}

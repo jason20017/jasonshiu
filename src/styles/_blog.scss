@@ -1,0 +1,193 @@
+@media (min-width: 859px) {
+  .blog_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0; //避開navbar固定後，往上縮的空間
+
+    .blog_topBar {
+      display: flex;
+      margin-top: 1.5rem;
+      margin-left: 4rem;
+      .searchBar {
+        display: flex;
+        .searchInput {
+          background-color: var(--blog-page);
+          width: 200px;
+          height: 40px;
+          border: none;
+          outline: none;
+          padding: 0 25px;
+          border-radius: 25px 0 0 25px;
+        }
+        .searchButton {
+          background-color: var(--main-yellow);
+          width: 100px;
+          height: 40px;
+          border: none;
+          outline: none;
+          border-radius: 0 25px 25px 0;
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+
+      .searchButton:hover {
+        background-color: var(--navi-yellow);
+        box-shadow: black 2px 2px 5px;
+        transition: 0.5s;
+      }
+      .blog_filters {
+        display: flex;
+        .blog_filter {
+          width: 90px;
+          height: 40px;
+          margin: 0 1rem;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          font-size: 16px;
+          background-color: var(--blog-page);
+          box-shadow: black 3px 3px 8px;
+        }
+        .blog_filter:hover {
+          transform: translateY(2px);
+          transition: 0.5s;
+        }
+      }
+    }
+    .blogZone {
+      width: 80%;
+      height: 100vh;
+      min-height: 100%;
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+    }
+    .post {
+      position: relative;
+      margin: 2rem 0 5rem 2rem;
+      background-color: var(--blog-page);
+      padding: 0.5rem 0 10rem 0.5rem;
+      border-radius: 10px;
+    }
+
+    .blog_dates,
+    .blog_titles,
+    .blog_contents {
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+    }
+    .blog_titles {
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+    .blog_contents {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    .blog_dates {
+      position: absolute;
+      bottom: 1rem;
+      left: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 859px) {
+  .blog_container {
+    display: flex;
+    flex-direction: column;
+
+    .blog_topBar {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+      margin-left: 1.2rem;
+      .searchBar {
+        display: flex;
+        .searchInput {
+          background-color: var(--blog-page);
+          width: 200px;
+          height: 40px;
+          border: none;
+          outline: none;
+          padding: 0 25px;
+          border-radius: 25px 0 0 25px;
+        }
+        .searchButton {
+          background-color: var(--main-yellow);
+          width: 100px;
+          height: 40px;
+          border: none;
+          outline: none;
+          border-radius: 0 25px 25px 0;
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+
+      .searchButton:hover {
+        background-color: var(--navi-yellow);
+        box-shadow: black 2px 2px 5px;
+        transition: 0.5s;
+      }
+      .blog_filters {
+        display: flex;
+        margin-top: 10px;
+        .blog_filter {
+          width: 90px;
+          height: 40px;
+          margin: 0 0.5rem;
+          padding: 0.2rem;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          font-size: 16px;
+          background-color: var(--blog-page);
+          box-shadow: black 3px 3px 8px;
+        }
+        .blog_filter:hover {
+          transform: translateY(2px);
+          transition: 0.5s;
+        }
+      }
+    }
+    .blogZone {
+      width: 80%;
+      height: 100vh;
+      min-height: 100%;
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+    }
+    .post {
+      position: relative;
+      margin: 2rem 0 5rem 2rem;
+      background-color: var(--blog-page);
+      padding: 0.5rem 0 10rem 0.5rem;
+      border-radius: 10px;
+    }
+
+    .blog_dates,
+    .blog_titles,
+    .blog_contents {
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+    }
+    .blog_titles {
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+    .blog_contents {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    .blog_dates {
+      position: absolute;
+      bottom: 1rem;
+      left: 1.5rem;
+    }
+  }
+}

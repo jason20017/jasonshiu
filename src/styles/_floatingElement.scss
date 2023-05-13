@@ -1,0 +1,57 @@
+.floating {
+  position: absolute;
+  top: 75vh; //將漂浮的element 定位在垂直80vh的地方，下方的動畫起始點，就以該定位點作位移來調整
+  display: flex;
+  flex-direction: row;
+  .floatIcon {
+    font-size: 70px;
+    margin: 0 20px;
+  }
+
+  .js {
+    color: yellow;
+    animation: floating 4s linear infinite; //動畫名稱, 循環時間, 移動軌跡, 延遲時間, 循環
+  }
+
+  .ts {
+    color: rgb(0, 122, 204);
+    animation: floating 4s linear 0.5s infinite; //動畫名稱, 循環時間, 移動軌跡, 延遲時間, 循環
+  }
+
+  .react {
+    color: #61dbfb;
+    animation: floating 4s linear 0.2s infinite;
+  }
+
+  .node {
+    color: #68a063;
+    animation: floating 4s linear 0.3s infinite;
+  }
+
+  .sql {
+    color: #00a5ca;
+    animation: floating 4s linear 1s infinite;
+  }
+  .mongo {
+    color: #4db33d;
+    animation: floating 4s linear 0.15s infinite;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0vh);
+  }
+  50% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@media (max-width: 858px) {
+  .floating {
+    display: none;
+  }
+}
