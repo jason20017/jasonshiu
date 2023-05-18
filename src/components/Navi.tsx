@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,30 +11,30 @@ const Navi: React.FC = () => {
   return (
     <div className="nav-container">
       <div className="nav-left">
-        <a href="/" className="nav-button">
+        <Link to="/jasonshiu" className="nav-button">
           Home
-        </a>
+        </Link>
       </div>
       <div className="nav-right" ref={navRef}>
         <div>
-          <a href="/about" className="nav-button">
+          <Link to="/about" className="nav-button">
             About
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/exp" className="nav-button">
+          <Link to="/exp" className="nav-button">
             Experience
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/port" className="nav-button">
+          <Link to="/port" className="nav-button">
             Portfolio
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/blog" className="nav-button">
+          <Link to="/blog" className="nav-button">
             Blog
-          </a>
+          </Link>
         </div>
         <button className="rwd-btn rwd-close-btn" onClick={showNavbar}>
           <FontAwesomeIcon icon={faTimes} />
