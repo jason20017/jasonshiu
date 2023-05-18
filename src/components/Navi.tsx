@@ -17,22 +17,22 @@ const Navi: React.FC = () => {
       </div>
       <div className="nav-right" ref={navRef}>
         <div>
-          <Link to="/about" className="nav-button">
+          <Link to="/about" className="nav-button" onClick={showNavbar}>
             About
           </Link>
         </div>
         <div>
-          <Link to="/exp" className="nav-button">
+          <Link to="/exp" className="nav-button" onClick={showNavbar}>
             Experience
           </Link>
         </div>
         <div>
-          <Link to="/port" className="nav-button">
+          <Link to="/port" className="nav-button" onClick={showNavbar}>
             Portfolio
           </Link>
         </div>
         <div>
-          <Link to="/blog" className="nav-button">
+          <Link to="/blog" className="nav-button" onClick={showNavbar}>
             Blog
           </Link>
         </div>

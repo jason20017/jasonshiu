@@ -4,7 +4,6 @@
   // top: 0;
   // left: 0;
   padding-top: 1.5rem;
-  min-width: 100%;
   justify-content: space-between;
   z-index: 1;
 
@@ -54,22 +53,25 @@
 }
 //手機板 width < 858px
 @media (max-width: 858px) {
-  .rwd-btn {
-    visibility: visible;
-    opacity: 1;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-  .rwd-btn:hover {
-    font-size: 1.9rem;
-    transition: 0.5s;
-  }
-
   .nav-container {
     display: flex;
-    min-width: 100%;
+    width: 100%;
+    max-width: 430px;
     justify-content: space-between;
     z-index: 100;
+    .rwd-btn {
+      visibility: visible;
+      opacity: 1;
+      border: 2px solid white;
+      border-radius: 10px;
+      position: absolute;
+      top: 2.5%;
+      right: 2px;
+    }
+    .rwd-btn:hover {
+      font-size: 1.9rem;
+      transition: 0.5s;
+    }
   }
 
   .nav-right {
@@ -96,6 +98,6 @@
   .responsive_nav {
     transform: none;
     position: absolute;
-    top: 12vh;
+    top: 11vh;
   }
 }
