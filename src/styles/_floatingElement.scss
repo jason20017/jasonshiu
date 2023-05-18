@@ -3,9 +3,12 @@
   top: 75vh; //將漂浮的element 定位在垂直80vh的地方，下方的動畫起始點，就以該定位點作位移來調整
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 100%;
   .floatIcon {
-    font-size: 70px;
-    margin: 0 20px;
+    font-size: 3.5rem;
+    max-width: 3rem;
+    margin: 0 1rem;
   }
 
   .js {

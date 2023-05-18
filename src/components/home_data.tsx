@@ -6,8 +6,9 @@ const home_data = {
       imgSrc: pic1,
       name: "Jason Shiu",
       Title: "Full Stack Freelancer",
-      desc1: "Build the Terminal operation website frontend by React.js",
-      desc2: "Re-design and reduced the size of API request code.",
+      desc1:
+        "Experienced full-stack web developer delivering seamless digital solutions and  creating user-friendly websites.",
+      desc2: "Build the Terminal operation website frontend by React.js",
       desc3: "",
       github: "https://github.com/jason20017",
       medium: "https://medium.com/@jason20017",
