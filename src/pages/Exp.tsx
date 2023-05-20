@@ -26,7 +26,14 @@ const Exp: React.FC<expProps> = () => {
               <div className="exp_company">{item.company}</div>
               <div className="exp_time">{item.time}</div>
             </div>
-            <div className="exp_desc">{item.desc}</div>
+            <div className="exp_desc">
+              {item.desc.split(". ").map((sentence, index) => (
+                <React.Fragment key={index}>
+                  {index > 0 && <div>&nbsp;&nbsp;</div>}
+                  {sentence.trim()}
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </div>
       ))}

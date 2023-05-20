@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import data from "../components/exp_data";
+import data from "../components/portfolioData";
 import Modal from "../components/port_Modal";
 const Portfolio: React.FC = () => {
   const [modal, setModal] = useState(false);
   const [tempData, setTempData] = useState<Array<string | undefined>>([]);
   const getData = (
     imgSrc: string | undefined,
-    jobTitle: string,
-    company: string,
-    time: string,
+    projectTitle: string,
+    date: string,
     desc: string
   ) => {
-    let tempData = [imgSrc, jobTitle, company, time, desc];
+    let tempData = [imgSrc, projectTitle, date, desc];
     setTempData(tempData);
     return setModal(true);
   };
@@ -23,19 +22,13 @@ const Portfolio: React.FC = () => {
             <img src={item.imgSrc} className="port_img" alt="" />
           </div>
 
-          <div className="port_Title">{item.jobTitle}</div>
+          <div className="port_Title">{item.projectTitle}</div>
           <div className="port_desc">{item.desc}</div>
 
           <button
             className="port_btn"
             onClick={() =>
-              getData(
-                item.imgSrc,
-                item.jobTitle,
-                item.company,
-                item.time,
-                item.desc
-              )
+              getData(item.imgSrc, item.projectTitle, item.date, item.desc)
             }
           >
             view detail
@@ -45,10 +38,9 @@ const Portfolio: React.FC = () => {
       {modal === true ? (
         <Modal
           imgSrc={tempData[0]}
-          jobTitle={tempData[1]}
-          company={tempData[2]}
-          time={tempData[3]}
-          desc={tempData[4]}
+          projectTitle={tempData[1]}
+          date={tempData[2]}
+          desc={tempData[3]}
           hide={() => setModal(false)}
         />
       ) : (

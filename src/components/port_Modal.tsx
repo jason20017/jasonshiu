@@ -7,9 +7,8 @@ interface portProps {
   imgSrc?: string | undefined;
   desc?: string;
   src?: string;
-  jobTitle?: string;
-  company?: string;
-  time?: string;
+  projectTitle?: string;
+  date?: string;
 }
 
 const port_Modal: React.FC<portProps> = (props) => {
@@ -20,8 +19,7 @@ const port_Modal: React.FC<portProps> = (props) => {
           <img src={props.imgSrc} className="modal_img" alt="" />
         </div>
         <div className="modal_right">
-          <div className="modal_company">{props.company}</div>
-          <div className="modal_jobTitle">{props.jobTitle}</div>
+          <div className="modal_jobTitle">{props.projectTitle}</div>
           <div className="modal_desc">{props.desc}</div>
         </div>
 

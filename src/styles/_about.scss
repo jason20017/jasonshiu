@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 0rem; //避開navbar固定後，往上縮的空間
+    max-width: 100vw;
+    min-height: 100vh;
     .about_mainBox {
       position: relative;
       min-height: 100%;
