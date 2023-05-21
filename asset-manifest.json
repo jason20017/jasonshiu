@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jasonshiu/static/css/main.9af71541.css",
-    "main.js": "/jasonshiu/static/js/main.9663fd7a.js",
+    "main.css": "/jasonshiu/static/css/main.e1654f3d.css",
+    "main.js": "/jasonshiu/static/js/main.7d4eed9e.js",
     "static/media/jason2.jpg": "/jasonshiu/static/media/jason2.791f2621a7d1aa6cd1ca.jpg",
     "static/media/formosa.jpg": "/jasonshiu/static/media/formosa.baa99aa1a873699830ea.jpg",
     "static/media/jason3.jpg": "/jasonshiu/static/media/jason3.f1a919230a8ba1128a81.jpg",
@@ -13,11 +13,11 @@
     "static/media/ETERNAL.jpg": "/jasonshiu/static/media/ETERNAL.2a0c195efabd08d7e88d.jpg",
     "static/media/headshot.jpg": "/jasonshiu/static/media/headshot.583e54c859b379598eaf.jpg",
     "index.html": "/jasonshiu/index.html",
-    "main.9af71541.css.map": "/jasonshiu/static/css/main.9af71541.css.map",
-    "main.9663fd7a.js.map": "/jasonshiu/static/js/main.9663fd7a.js.map"
+    "main.e1654f3d.css.map": "/jasonshiu/static/css/main.e1654f3d.css.map",
+    "main.7d4eed9e.js.map": "/jasonshiu/static/js/main.7d4eed9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9af71541.css",
-    "static/js/main.9663fd7a.js"
+    "static/css/main.e1654f3d.css",
+    "static/js/main.7d4eed9e.js"
   ]
 }
