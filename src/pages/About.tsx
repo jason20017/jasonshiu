@@ -51,7 +51,14 @@ const About: React.FC<aboutProps> = () => {
                 }`}
               >
                 <div className="about_desc_title">{item.title}</div>
-                <div className="about_desc_content">{item.desc}</div>
+                {item.desc.split(". ").map((sentence, index) => (
+                  <React.Fragment key={index}>
+                    <div className="about_desc_content">
+                      {index > 0 && <div>&nbsp;</div>}
+                      {sentence.trim()}
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
             </div>
           </>

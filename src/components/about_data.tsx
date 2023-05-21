@@ -19,7 +19,7 @@ const about_data = {
       id: 3,
       imgSrc: pic3,
       title: "Passion",
-      desc: "In the realm of professionalism, one individual stands out as an embodiment of unwavering passion—a driving force that propels them to extraordinary heights in their chosen field. With a burning desire and an insatiable hunger for success, this individual's passion becomes the fuel that ignites their journey towards greatness. This individual's passion is contagious, sparking motivation and igniting the fire within others. Their enthusiasm becomes a catalyst for collaboration and creativity, fostering an environment where ideas flourish and breakthroughs happen. Their unwavering belief in their work inspires confidence in clients, colleagues, and partners, forging strong bonds based on shared passion and purpose.",
+      desc: "In the realm of professionalism, one individual stands out as an embodiment of unwavering passion—a driving force that propels them to extraordinary heights in their chosen field. With a burning desire and an insatiable hunger for success, this individual's passion becomes the fuel that ignites their journey towards greatness. Their enthusiasm becomes a catalyst for collaboration and creativity, fostering an environment where ideas flourish and breakthroughs happen.",
     },
   ],
 };

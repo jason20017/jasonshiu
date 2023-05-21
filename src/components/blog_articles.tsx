@@ -2,19 +2,17 @@ const Article = {
   card: [
     {
       id: 1,
-      title: "第一個 This is blog title",
-      content:
-        "this is blog Contents. this is blog Contents. this is blog Contents.",
+      title: "物件導向OOP 的四大特性",
+      content: "this is blog Contents of 物件導向OOP 的四大特性",
       date: "2023/4/23",
-      theme: "Leetcode",
+      theme: "Front End",
     },
     {
       id: 2,
-      title: "第二個2nd Blog Title",
-      content:
-        "this is blog Contents. this is blog Contents. this is blog Contents.",
+      title: "Sorting Algorithms",
+      content: "this is blog Contents of Sorting Algorithms .",
       date: "2023/4/24",
-      theme: "Full Stack",
+      theme: "Algorithms",
     },
   ],
 };

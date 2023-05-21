@@ -145,22 +145,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 50vh;
-      padding-top: 5rem;
+      height: auto;
       z-index: 0;
       img {
         width: calc(#{$base-img-size});
         border-radius: 50%;
-        margin: 3rem auto;
+        margin: 1rem auto;
         box-shadow: 3px 3px 10px var(--main-yellow);
         animation: shining 3s linear infinite;
       }
       .home_socialIcon {
         display: flex;
         justify-content: center;
-        margin-top: -2rem;
         .home_Icon {
-          font-size: 60px;
+          font-size: 13vw;
           margin: 0 1.5rem;
           color: var(--main-yellow);
         }
@@ -193,19 +191,19 @@
       }
     }
     .home_right {
-      position: relative;
       width: 100%;
-      height: 25vh;
-      max-height: 25vh;
+      height: auto;
+      padding-left: 1rem;
       z-index: 0;
       .info_box {
-        position: absolute;
         width: 70%;
-        height: 40%;
-        max-height: 25vh;
+        height: auto;
+        max-height: auto;
         left: 20%;
         margin: auto;
         .info {
+          height: auto;
+          max-height: auto;
           margin: 0.4rem 0;
           word-wrap: break-word;
         }
@@ -223,17 +221,11 @@
           animation: nameShining 3s linear infinite;
         }
         .home_title {
-          position: absolute;
-          top: 5rem;
-          left: 0;
           font-size: calc(#{$base-font-size} - 5vw);
           color: var(--text-white);
           text-shadow: var(--text-shadow-balck);
         }
         .home_desc_box {
-          position: absolute;
-          top: 7rem;
-          left: 0;
           font-size: calc(#{$base-font-size} - 6.5vw);
           color: var(--text-white);
           text-shadow: var(--text-shadow-balck);

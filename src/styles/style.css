@@ -265,24 +265,22 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    padding-top: 5rem;
+    height: auto;
     z-index: 0;
   }
   .home_container .home_left img {
     width: calc(55vw);
     border-radius: 50%;
-    margin: 3rem auto;
+    margin: 1rem auto;
     box-shadow: 3px 3px 10px var(--main-yellow);
     animation: shining 3s linear infinite;
   }
   .home_container .home_left .home_socialIcon {
     display: flex;
     justify-content: center;
-    margin-top: -2rem;
   }
   .home_container .home_left .home_socialIcon .home_Icon {
-    font-size: 60px;
+    font-size: 13vw;
     margin: 0 1.5rem;
     color: var(--main-yellow);
   }
@@ -311,21 +309,21 @@ ul {
     }
   }
   .home_container .home_right {
-    position: relative;
     width: 100%;
-    height: 25vh;
-    max-height: 25vh;
+    height: auto;
+    padding-left: 1rem;
     z-index: 0;
   }
   .home_container .home_right .info_box {
-    position: absolute;
     width: 70%;
-    height: 40%;
-    max-height: 25vh;
+    height: auto;
+    max-height: auto;
     left: 20%;
     margin: auto;
   }
   .home_container .home_right .info_box .info {
+    height: auto;
+    max-height: auto;
     margin: 0.4rem 0;
     word-wrap: break-word;
   }
@@ -337,17 +335,11 @@ ul {
     animation: nameShining 3s linear infinite;
   }
   .home_container .home_right .info_box .home_title {
-    position: absolute;
-    top: 5rem;
-    left: 0;
     font-size: calc(10vw - 5vw);
     color: var(--text-white);
     text-shadow: var(--text-shadow-balck);
   }
   .home_container .home_right .info_box .home_desc_box {
-    position: absolute;
-    top: 7rem;
-    left: 0;
     font-size: calc(10vw - 6.5vw);
     color: var(--text-white);
     text-shadow: var(--text-shadow-balck);
@@ -510,14 +502,14 @@ ul {
   }
   .about_container .about_mainBox .about_photoBox {
     position: relative;
-    width: 75%;
-    height: 55vh;
+    width: 95%;
+    height: 56vh;
   }
   .about_container .about_mainBox .about_photoBox .about_imageBox {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 15%;
+    left: 0;
     opacity: 1;
     -o-object-fit: cover;
        object-fit: cover;
@@ -529,7 +521,7 @@ ul {
   .about_container .about_mainBox .about_photoBox .about_borderBox {
     position: absolute;
     top: 1%;
-    left: 20%;
+    left: 5%;
     width: 100%;
     height: 57vh;
     border: 8px solid var(--navi-yellow);
@@ -544,16 +536,17 @@ ul {
   .about_container .about_mainBox .about_descBox .about_desc {
     position: absolute;
     top: 8%;
-    left: 20%;
+    left: 10%;
     color: antiquewhite;
     opacity: 1;
     transition: opacity 0.25s ease-out;
   }
   .about_container .about_mainBox .about_descBox .about_desc .about_desc_title {
-    font-size: 60px;
+    font-size: 10vw;
   }
   .about_container .about_mainBox .about_descBox .about_desc .about_desc_content {
-    font-size: 25px;
+    font-size: 4vw;
+    max-height: auto;
   }
   .about_container .about_arrowBox {
     opacity: 0;
@@ -582,7 +575,7 @@ ul {
   .exp_container .exp_cardBox {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     width: 99vw;
     max-width: 100vw;
     height: 100vh;
@@ -643,7 +636,7 @@ ul {
     width: 0.5vw;
     height: 50vh;
     position: absolute;
-    top: -90px;
+    top: 0px;
     right: 10px;
   }
   .exp_container .exp_cardBox .exp_subTitleBox::after {
@@ -686,7 +679,8 @@ ul {
     align-items: center;
     width: 100vw;
     max-width: 100vw;
-    max-height: 100vh;
+    height: auto;
+    max-height: auto;
     margin-top: 10px;
     z-index: 0;
   }
@@ -695,11 +689,14 @@ ul {
     justify-content: center;
     width: 400px;
     min-width: 100%;
-    max-height: 100vh;
+    height: auto;
+    max-height: auto;
     box-shadow: 3px 3px 10px black;
   }
   .exp_container .exp_cardBox .exp_imgBox .exp_img {
     max-width: 100%;
+    height: auto;
+    max-height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -707,26 +704,30 @@ ul {
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-    min-height: 100%;
+    height: auto;
+    max-height: auto;
   }
   .exp_container .exp_cardBox .exp_subTitleBox {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    max-width: 400px;
-    min-height: 100%;
+    vertical-align: middle;
+    width: 180px;
+    max-width: 200px;
+    height: auto;
+    max-height: auto;
+    padding-left: 0.5rem;
   }
   .exp_container .exp_cardBox .exp_subTitleBox .exp_jobTitle {
     color: var(--text-white);
-    font-size: 25px;
+    font-size: 5vw;
     text-align: right;
     margin-top: 15px;
     margin-right: 30px;
   }
   .exp_container .exp_cardBox .exp_subTitleBox .exp_company {
     color: var(--navi-yellow);
-    font-size: 20px;
+    font-size: 4vw;
     text-align: right;
     font-weight: 700;
     margin-top: 15px;
@@ -734,7 +735,7 @@ ul {
   }
   .exp_container .exp_cardBox .exp_subTitleBox .exp_time {
     color: var(--text-white);
-    font-size: 20px;
+    font-size: 3vw;
     text-align: right;
     margin-top: 15px;
     margin-right: 30px;
@@ -746,9 +747,11 @@ ul {
     width: 500px;
     max-width: 100%;
     height: 200px;
-    max-height: 200px;
-    padding-top: 21px;
-    padding-left: 10px;
+    height: auto;
+    max-height: auto;
+    padding-top: 1em;
+    padding-left: 1.3em;
+    text-indent: -1em;
   }
 }
 @media (min-width: 859px) {
@@ -991,10 +994,12 @@ ul {
     max-height: 100%;
   }
   .modal_container .modal .modal_right {
-    width: 40%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-top: 0.5rem;
+    font-size: 7vw;
   }
   .modal_container .modal .modal_close {
     position: absolute;
@@ -1260,7 +1265,7 @@ ul {
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
-    margin-left: 1.2rem;
+    margin-left: 0.5rem;
   }
   .blog_container .blog_topBar .searchBar {
     display: flex;
@@ -1296,7 +1301,7 @@ ul {
   .blog_container .blog_topBar .blog_filters .blog_filter {
     width: 90px;
     height: 40px;
-    margin: 0 0.5rem;
+    margin: 0 0.2rem;
     padding: 0.2rem;
     cursor: pointer;
     border: none;
@@ -1311,15 +1316,16 @@ ul {
     transition: 0.5s;
   }
   .blog_container .blogZone {
-    width: 80%;
-    height: 100vh;
-    min-height: 100%;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
   .blog_container .post {
     position: relative;
-    margin: 2rem 0 5rem 2rem;
+    height: 30vh;
+    max-height: 30vh;
+    overflow: hidden;
+    margin: 1rem 1rem 2rem 1rem;
     background-color: var(--blog-page);
     padding: 0.5rem 0 10rem 0.5rem;
     border-radius: 10px;
@@ -1332,12 +1338,13 @@ ul {
     color: black;
   }
   .blog_container .blog_titles {
-    font-size: 3rem;
-    margin-left: 1rem;
+    font-size: 7vw;
   }
   .blog_container .blog_contents {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+    font-size: 3vw;
+    height: 120%;
+    overflow: hidden;
+    padding: 0.5rem 0.5rem 0 0.5rem;
   }
   .blog_container .blog_dates {
     position: absolute;
@@ -1379,29 +1386,27 @@ ul {
 }
 @media (max-width: 859px) {
   .single_container {
-    margin: 4rem 0 5rem 2rem;
+    margin: 4rem 0 0 1rem;
     background-color: var(--blog-page);
-    padding: 0.5rem 0 10rem 0.5rem;
+    padding: 0.5rem 0 3rem 0.5rem;
     border-radius: 10px;
     width: 90vw;
     max-width: 100vw;
-    height: 100%;
-    max-height: 100vh;
+    height: auto;
+    max-height: auto;
   }
   .single_header {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .single_titles {
-    font-size: 3rem;
-    margin-left: 1rem;
+    font-size: 7vw;
   }
   .single_dates {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 3vw;
+    text-align: right;
+    padding-top: 1rem;
   }
   .single_contents {
     font-size: 1.5rem;

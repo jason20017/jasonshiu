@@ -148,14 +148,14 @@
       justify-content: center;
       .about_photoBox {
         position: relative;
-        width: 75%;
-        height: 55vh;
+        width: 95%;
+        height: 56vh;
         // border: 2px solid red;
         .about_imageBox {
           position: absolute;
           width: 100%;
           height: 100%;
-          left: 15%;
+          left: 0;
           opacity: 1;
           object-fit: cover;
           transition: opacity 0.25s ease-out;
@@ -167,7 +167,7 @@
         .about_borderBox {
           position: absolute;
           top: 1%;
-          left: 20%;
+          left: 5%;
           width: 100%;
           height: 57vh;
           border: 8px solid var(--navi-yellow);
@@ -183,15 +183,16 @@
         .about_desc {
           position: absolute;
           top: 8%;
-          left: 20%;
+          left: 10%;
           color: antiquewhite;
           opacity: 1;
           transition: opacity 0.25s ease-out;
           .about_desc_title {
-            font-size: 60px;
+            font-size: 10vw;
           }
           .about_desc_content {
-            font-size: 25px;
+            font-size: 4vw;
+            max-height: auto;
           }
         }
       }
